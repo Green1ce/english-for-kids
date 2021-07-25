@@ -1,0 +1,77 @@
+$train: #00ffff;
+$play: #ff7f50;
+$words: #8b008b;
+
+.statistic-wrapper{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.table__wrapper{
+  width: 100%;
+  min-width: 750px;
+  display: flex;
+  flex-direction: column;
+}
+
+.table__category-name{
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 700;
+  user-select: none;
+  background-color: $play;
+  color: $words;
+  column-span: 3;
+  padding-left: 10px;
+}
+
+.table__header-wrapper{
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 700;
+  user-select: none;
+  color: $words;
+  border-top: 1px solid $play;
+  margin-top: 30px;
+}
+
+.table__word-wrapper{
+  width: 100%;
+  height: 25px;
+  display: flex;
+  font-size: 18px;
+  font-weight: 500;
+  user-select: none;
+}
+
+.table__word,
+.table__translation{
+  width: 30%;
+  height: 100%;
+  border-bottom: 1px solid $play;
+  padding-left: 10px;
+}
+
+.table__translation{
+  border-left: 1px solid $play;
+}
+
+.table__hit,
+.table__miss,
+.table__train,
+.table__right-persent{
+  width: 10%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  border-left: 1px solid $play;
+  border-bottom: 1px solid $play;
+}

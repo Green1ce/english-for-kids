@@ -1,0 +1,183 @@
+$white: #ffffff;
+$green: #00bf82;
+$blue: #3F51B5;
+$red: #E53935;
+
+.admin__section-card{
+  height: 200px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px 1%;
+
+  &__view-card,
+  &__change-card{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    user-select: none;
+  }
+
+  &__delete-button{
+    border: none;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border-radius: 20px;
+    background-color: $white;
+    background-image: url(../../../../public/close.png);
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position: center center;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+  }
+
+  &__name,
+  &__words-quantity,
+  &__update-button,
+  &__add-word-button,
+  &__cancel-button,
+  &__create-button{
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    user-select: none;
+  }
+
+  &__name{
+    width: fit-content;
+    top: 20px;
+  }
+
+  &__words-quantity{
+    font-weight: 500;
+    justify-content: flex-start;
+    top: 80px;
+  }
+
+  &__update-button,
+  &__add-word-button,
+  &__cancel-button,
+  &__create-button{
+    width: 120px;
+    height: 30px;
+    border: 2px solid $green;
+    border-radius: 10px;
+    font-weight: 500;
+    background-color: $white;
+    color: $green;
+    cursor: pointer;
+    bottom: 20px;
+  }
+
+  &__words-quantity,
+  &__update-button,
+  &__cancel-button{
+    left: 20px;
+  }
+
+  &__add-word-button,
+  &__create-button{
+    right: 20px;
+  }
+
+  &__cancel-button,
+  &__create-button{
+    height: 60px;
+  }
+
+  &__cancel-button{
+    border: 2px solid $red;
+    color: $red;
+  }
+
+  &__icon{
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    border: 2px solid $green;
+    border-radius: 50%;
+    background-image: url(../../../../public/close.png);
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position: center center;
+    transform: rotate(45deg);
+    cursor: pointer;
+    top: 70px;
+  }
+
+  &__new-name,
+  &__name-input{
+    width: calc(100% - 40px);
+    position: absolute;
+    left: 20px;
+  }
+
+  &__new-name{
+    font-size: 12px;
+    font-weight: 700;
+    color: $blue;
+    top: 20px;
+  }
+
+  &__name-input{
+    height: 30px;
+    font-size: 22px;
+    font-weight: 400;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid $blue;
+    top: 50px;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.wrong-name{
+  border: 2px solid $red;
+  border-radius: 5px;
+}
+
+@media (min-width: 1340px) {
+  .admin__section-card{
+    width: 23%;
+  }
+}
+
+@media (min-width: 1020px) and (max-width: 1340px) {
+  .admin__section-card{
+    width: 31.25%;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1020px) {
+  .admin__section-card{
+    width: 48%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 700px) {
+  .admin__section-card{
+    width: 100%;
+    margin: 10px 0;
+  }
+}

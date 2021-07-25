@@ -1,0 +1,84 @@
+$menu: #0099AE;
+$play: #ff7f50;
+
+.burger-menu{
+  width: 250px;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  background: $menu;
+  font-size: 22px;
+  transition: all 0.3s;
+  padding: 100px 25px 30px 25px;
+  top: 0px;
+  left: -250px;
+  z-index: 1;
+}
+
+.burger-menu__button{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  border: none;
+  background: none;
+  background-image: url(../../../../public/plus.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-right: calc(50% - 100px);
+  z-index: 2;
+}
+
+.menu-bar{
+  height: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.05s;
+  margin-top: 10px;
+}
+
+.menu-bar:hover{
+  color: $play;
+}
+
+.menu-bar-select{
+  color: $play;
+}
+
+.menu-login-button{
+  width: 200px;
+  height: 50px;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  line-height: 26px;
+  color: #ffffff;
+  background-color: $menu;
+  transition: all .8s;
+  padding-left: 30px;
+  bottom: 20px;
+}
+
+.menu-login-button:hover {
+  transform: scale(1.1);
+  color: $play;
+  cursor: pointer;
+  border: 2px solid $play;
+}
+
+.rotate{
+  background-color: $menu;
+  transform: rotate(45deg);
+}
+
+.show-up{
+  left: 0px;
+}

@@ -1,0 +1,81 @@
+$play: #ff7f50;
+
+.main{
+  width: 100vw;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 30px 50px;
+}
+
+.cards-field{
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.category-name{
+  width: 100%;
+  height: 60px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  font-weight: 600;
+  color: $play;
+  cursor: default;
+  user-select: none;
+  margin: 30px 0;
+}
+
+.start-play__button{
+  border: 1px solid red;
+  width: 220px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+  border: none;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 700;
+  background: $play;
+  text-transform: uppercase;
+  cursor: pointer;
+  user-select: none;
+  margin: 30px calc(50% - 110px);
+}
+
+.repeat__button{
+  width: 150px;
+  background-color: #228b22;
+}
+
+.final-img{
+  width: 600px;
+}
+
+.reset-button{
+  width: 120px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: $play;
+  text-transform: uppercase;
+  cursor: pointer;
+  user-select: none;
+  margin-top: 30px;
+  margin-left: calc(100% - 120px);
+}
