@@ -1,0 +1,39 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "airbnb-typescript/base",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "tsconfig.json",
+    "tsconfigRootDir": "./"
+  },
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "ignorePatterns": ["*.config.js", "node_modules/", "dist/"],
+  "rules": {
+    "no-plusplus": "off",
+    "no-new": "off",
+    "no-console": "warn",
+    "no-unresolved": "off",
+    "no-alert": "warn",
+    "dot-notation": "off",
+    "max-len": ["warn", { "code": 300 }],
+    "indent": ["warn", 2, {
+      "SwitchCase": 1
+    }],
+    "@typescript-eslint/indent": ["warn", 2, {
+      "SwitchCase": 1
+    }],
+    "import/prefer-default-export": "off",
+    "no-param-reassign": ["error", {
+      "props": false
+    }]
+  }
+}

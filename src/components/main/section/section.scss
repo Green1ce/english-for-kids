@@ -1,0 +1,43 @@
+$train: #00ffff;
+$play: #ff7f50;
+
+.section{
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  background-color: $train;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.5s;
+  margin: 30px 10px 0 15px;
+  z-index: 0;
+}
+
+.section-play{
+  background-color: $play;
+}
+
+.section:hover{
+  transform: translateZ(20px);
+  box-shadow: 0 15px 20px black;
+}
+
+.section__img{
+  width: 196px;
+  border-radius: 30px;
+  display: flex;
+  margin: 2px 0 10px;
+}
+
+.section__name{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  user-select: none;
+}

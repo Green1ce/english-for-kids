@@ -1,0 +1,126 @@
+$train: #00ffff;
+$play: #ff7f50;
+
+.card__wrapper{
+  width: 200px;
+  height: 200px;
+  display: flex;
+  position: relative;
+  border-radius: 30px;
+  cursor: pointer;
+  perspective: 900px;
+  margin: 35px 10px 0 15px;
+  z-index: 0;
+}
+
+.card-train:hover > .card__front{
+  transform: translateZ(30px);
+  box-shadow: 0 10px 15px #dda0dd;
+}
+
+.card-train{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  border-radius: 30px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform-origin: right;
+  transition: all .8s;
+  z-index: 2;
+}
+
+.card-train.flipped{
+  transform: rotateY(180deg) translateX(-100%);
+  transform-origin: left;
+}
+
+.card__front,
+.card__back{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  border-radius: 30px;
+  background-color: $train;
+  backface-visibility: hidden;
+  transition: all .8s;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.card__back{
+  transform: rotateY(180deg);
+}
+
+.card-play{
+  border: 2px solid $play;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 30px;
+  cursor: pointer;
+  margin: 35px 10px 0 15px;
+  transition: all .8s;
+  z-index: 0;
+}
+
+.card-play:hover{
+  transform: translateZ(30px);
+  box-shadow: 0 10px 15px #dda0dd;
+}
+
+.correct-card{
+  transition: all .8s;
+  filter: blur(4px);
+  cursor: default;
+}
+
+.correct-card.card-play:hover{
+  transform: none;
+  box-shadow: none;
+}
+
+.card__img{
+  width: 196px;
+  border-radius: 30px;
+  display: flex;
+  margin: 2px 0 0;
+}
+
+.card__name{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  user-select: none;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.card__flip-button{
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+  position: absolute;
+  background-image: url(../../../../public/flip.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: $train;
+  cursor: pointer;
+  bottom: 12.5px;
+  right: 7.5px;
+  z-index: 5;
+}
+
+.card__flip-button:hover{
+  background-color: #ffff00;
+}
