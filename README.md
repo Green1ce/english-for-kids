@@ -1,2 +1,2 @@
 # english-for-kids
-deploy: english-for-kids-green1ce.netlify.app
+deploy: https://english-for-kids-green1ce.netlify.app/
